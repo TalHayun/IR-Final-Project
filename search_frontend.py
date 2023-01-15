@@ -40,8 +40,6 @@ import builtins
 nltk.download('stopwords')
 
 
-
-
 class MyFlaskApp(Flask):
     def run(self, host=None, port=None, debug=None, **options):
         super(MyFlaskApp, self).run(host=host, port=port, debug=debug, **options)
