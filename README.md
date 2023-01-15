@@ -31,6 +31,6 @@ descending order of the NUMBER OF QUERY WORDS that appear in anchor text linking
 
 ## create_indexes
 
-- `create_index` - The main method to create inverted index instance for title/body/anchor. In addition addinng the posting locations and df to the inverted index.
+- `create_index` - The main method to create inverted index instance for title/body/anchor. In addition, addinng the posting locations and df to the inverted index.
 
 - `create_index_for_5_func` - Method to create inverted index instance according to the required rules (without stremming and given regex).
