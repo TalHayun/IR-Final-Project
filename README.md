@@ -20,10 +20,10 @@ This file contains 5 main methods that process queries and return resultsfrom th
 
 - `search_body` - Method that return up to 100 search results for the query using TFIDIF and Cosine Similarity of the body of articles only.
 
-- `search_title` - Method that returns all search results that contain a query word in the title of articles, ordered in descending order of the NUMBER OF DISTINCT QUERY WORDS that appear in the title.
+- `search_title` - Method that returns all search results that contain a query word in the title of articles, ordered in descending order of the number of distinct query words that appear in the title.
 
 - `search_anchor` - Method that returns all search results that contain a query word in the anchor text of articles, ordered in
-descending order of the NUMBER OF QUERY WORDS that appear in anchor text linking to the page.
+descending order of the number of query words that appear in anchor text linking to the page.
 
 - `get_pagerank` - Method that returns PageRank values for a list of provided wiki article IDs.
 
