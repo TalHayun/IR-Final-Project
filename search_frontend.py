@@ -47,7 +47,7 @@ class MyFlaskApp(Flask):
 app = MyFlaskApp(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
-bucket_name = 'oded_318963386'
+bucket_name = 'tal_208645564'
 BLOCK_SIZE = 1999998
 NUM_BUCKETS = 124
 TUPLE_SIZE = 6  # We're going to pack the doc_id and tf values in this many bytes.
@@ -108,7 +108,7 @@ class MultiFileReader:
     def read(self, locs, n_bytes, prefix):
         b = []
         client = storage.Client()
-        bucket = client.get_bucket('oded_318963386')
+        bucket = client.get_bucket('tal_208645564')
         for f_name, offset in locs:
             blob = bucket.get_blob(prefix + f'/{f_name}')
             if blob == None:
@@ -814,7 +814,7 @@ def read_for_search_frontend(bucket_name, name):
        return: file
        """
     GCSFS = gcsfs.GCSFileSystem()
-    with GCSFS.open(f"gs://oded_318963386/{name}", 'rb') as f:
+    with GCSFS.open(f"gs://ral_208645564/{name}", 'rb') as f:
         return pickle.load(f)
 
 def read_posting_list(inverted, w, prefix):
